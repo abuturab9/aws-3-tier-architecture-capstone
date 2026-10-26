@@ -1,0 +1,14 @@
+<?php
+$servername = "saad-mysql.cgn0mk6wsrdo.us-east-1.rds.amazonaws.com";
+$username = "admin";
+$password = "*******";
+
+// Connection create karein
+$conn = new mysqli($servername, $username, $password);
+
+// Connection check karein
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "<h1>Saad Khan RDS</h1>";
+?>
